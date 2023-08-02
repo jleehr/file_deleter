@@ -1,0 +1,11 @@
+services:
+  logger.channel.file_deleter:
+    parent: logger.channel_base
+    arguments: [ 'file_delete' ]
+
+  file_deleter.commands:
+    class: Drupal\file_deleter\Commands\FileDelete
+    calls:
+      - [setLogger, ['@logger.channel.file_deleter']]
+    tags:
+      - { name: drush.command }

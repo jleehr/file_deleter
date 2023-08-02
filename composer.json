@@ -1,0 +1,17 @@
+{
+    "name": "jleehr/file_deleter",
+    "description": "Deletes files provided by CSV file.",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://drupal.org/project/scheduler",
+    "require-dev": {
+        "drush/drush": ">=9"
+    },
+    "authors": [
+        {
+            "name": "Jan Leehr (jleehr)",
+            "homepage": "https://github.com/jleehr",
+            "role": "Maintainer"
+        }
+    ]
+}
